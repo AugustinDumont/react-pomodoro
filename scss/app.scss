@@ -1,110 +1,112 @@
 html {
-    margin: 0;
-    padding: 0;
-    font: normal 62.5%;
+  margin: 0;
+  padding: 0;
+  font: normal 62.5%;
 }
 
 body {
-    background: blue;
-    display: flex;
-    justify-content: center;
-    font-family: "Josefin Slab", serif;
+  background: blue;
+  display: flex;
+  justify-content: center;
+  font-family: "Josefin Slab", serif;
 }
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 7rem;
+    color: white;
+    margin: 1rem;
+  }
+
+  .timer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-        font-family: "Amatic SC", cursive;
-        font-size: 7rem;
-        color: white;
-        margin: 1rem;
+    margin-top: 1rem;
+    .cycle {
+      font-size: 2rem;
+      color: yellow;
+      font-weight: 700;
     }
-
-    .timer {
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-        .cycle {
-            font-size: 2rem;
-            color: yellow;
-            font-weight: 700;
-        }
-        .count-down {
-            width: 40vw;
-            height: 30vh;
-            margin-top: 2rem;
-            font-family: "Amatic SC", cursive;
-            font-size: 8rem;
-            cursor: pointer;
-            color: white;
-        }
+    .count-down {
+      width: 40vw;
+      height: 30vh;
+      margin-top: 2rem;
+      font-family: "Amatic SC", cursive;
+      font-size: 8rem;
+      cursor: pointer;
+      color: white;
     }
+  }
 
-    .timer-controllers {
-        display: flex;
-        flex-direction: row;
+  .timer-controllers {
+    display: flex;
+    flex-direction: row;
 
-        .controller {
-            p,
-            .buttons {
-                font-size: 2rem;
-                margin: 3rem;
-                color: yellow;
-                font-weight: 900;
-            }
-        }
-        button {
-            width: 2rem;
-        }
+    .controller {
+      p,
+      .buttons {
+        font-size: 2rem;
+        margin: 3rem;
+        color: yellow;
+        font-weight: 900;
+      }
     }
-
-    .volume {
-        margin: 2em;
-        img {
-            width: 20px;
-            height: 20px;
-        }
+    button {
+      width: 2rem;
+      cursor: pointer;
     }
+  }
+
+  .volume {
+    margin: 2em;
+    cursor: pointer;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 // Button animation from codepen :
 
 .btn {
-    position: relative;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    outline: none;
-    transition: 2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: 2s ease-in-out;
 }
 
 svg {
-    width: 40vw;
-    height: 30vh;
-    position: absolute;
-    left: 0;
-    top: 0;
-    fill: none;
-    stroke: #fff;
-    stroke-dasharray: 150 480;
-    stroke-dashoffset: 150;
-    transition: 2s ease-in-out;
+  width: 40vw;
+  height: 30vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 2s ease-in-out;
 }
 
 .btn:hover {
-    transition: 2s ease-in-out;
+  transition: 2s ease-in-out;
 }
 
 .btn:hover svg {
-    stroke-dashoffset: -480;
+  stroke-dashoffset: -480;
 }
 
 .btn span {
-    color: white;
-    font-size: 40px;
-    font-weight: 100;
+  color: white;
+  font-size: 40px;
+  font-weight: 100;
 }
