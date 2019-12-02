@@ -1,0 +1,55 @@
+configuration repo
+congiration npm init -y
+creation .babelrc
+creation src avec index.js et App.js
+Preparation index.html avec div et id = "app
+Preparation App.js avec test HEllo World
+Installation de parcel => $ nisd parcel-bundler (npm install save-dev
+ajout des scripts dans package.json "build": "npx parcel build index.html" et "work' : .... ... 
+npm run work pour  builder
+Vérfifaction du hello world dans la console
+Installation eslint spécial becode
+Création de gitignore global (cach / dist)
+npm install react dom
+
+/app.js
+
+Link avec import react React DOM , ... 
+
+Creation des components principaux
+
+/pomodoro.js composant principal
+
+configuration style 
+
+html {
+    font : Normal 62.5% sans-serif
+}
+
+
+Installation de pro types : 
+
+import de PropTypes... 
+
+PropTypes permet d'indiquer le type de propriété qui est attendu. 
+
+
+
+Utilisation de padstart() pour placer un 0 devant chaine de character trop court (cfr 00:00)
+
+ordre des components 
+
+1) pomodoro
+2) Timer
+3) Button
+
+
+Utilisation de usestate() = state des class et useeffect();
+
+
+
+
+
+
+ 
+
