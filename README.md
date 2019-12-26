@@ -27,8 +27,8 @@ use the url https://nostalgic-heyrovsky-aa6f73.netlify.com
 
 ## Improvement clue
 
-Folder's organization
-startTimer() function decrement on each click and wouldn't
+- Folder's organization
+- startTimer() function decrement on each click and wouldn't
 
 ## Intallation
 
